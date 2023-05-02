@@ -1,0 +1,677 @@
+// <!-- <script src="JS.js"></script> -->
+// <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+
+
+// <br>
+//  <!-- <table class="tableborder"
+// <table id="mytable">
+//     <thead>
+//     <tr>
+//         <th>Firstname</th>
+//         <th>Lastname</th>
+//         <th>Birthday</th>
+//         <th>age</th>
+//         <th>Email id</th>
+//         <th>phone number</th>
+//         <th>subject</th>
+//     </tr>
+//     </thead> -->
+//     <!-- <tbody>
+//     </tbody>
+// </table> -->
+
+
+// <!--  -->
+
+
+
+
+
+
+//   <!-- <div class="table"> -->
+//     <!-- <table style="width:100%">
+//             <table id ="data">
+//             <tr>
+//                 <th>Firstname</th>
+//                 <th>Lastname</th>
+//                 <th>Birthday</th>
+//                 <th>age</th>
+//                 <th>Email id</th>
+//                 <th>phone number</th>
+//                 <th>subject</th>
+//             </tr>
+//             <tr>
+//                 <thead>
+//                 <tbody>
+//                 <tbody>
+//                     </thead>
+//             </tr>
+
+//         </table> -->
+
+
+
+// <form>
+//   <h2>Contact Form</h2>
+//   <div id="form-fields"></div>
+//   <button type="submit">Submit</button>
+// </form>
+// <script>
+//   const formFields = [
+//     {
+//       name: 'name',
+//       type: 'text',
+//       label: 'Name',
+//       required: true
+//     },
+//     {
+//       name: 'email',
+//       type: 'email',
+//       label: 'Email',
+//       required: true
+//     },
+//     {
+//       name: 'message',
+//       type: 'textarea',
+//       label: 'Message',
+//       required: false
+//     }
+//   ];
+//   const form = document.querySelector('form');
+//   const formFieldsContainer = document.getElementById('form-fields');
+//   formFields.forEach(field => {
+//     const { name, type, label, ...options } = field;
+//     const labelEl = document.createElement('label');
+//     labelEl.textContent = label;
+//     const inputEl = document.createElement(type === 'textarea' ? 'textarea' : 'input');
+//     inputEl.type = type;
+//     inputEl.name = name;
+//     inputEl.required = options.required || false;
+//     formFieldsContainer.appendChild(labelEl);
+//     formFieldsContainer.appendChild(inputEl);
+//   });
+// </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+//         // (function setup() {
+//             //     "use strict";
+//             //     let firstnameElem = document.getElementById("firstname");
+//             //     console.log("firstname");
+//             //     let lastnameElem = document.getElementById("lastname").value;
+//             //     let emailElem = document.getElementById("email");
+//             //     let phoneElem = document.getElementById("phone");
+//             //     let dateElem = document.getElementById("date");
+//             //     let ageElem = document.getElementById("age");
+//             //     let subjectElem = document.getElementById("subject");
+//             //     let tableElem = document.getElementById("table");
+        
+//             //         var newRow = tableElem.insertRow(-1);
+//             //         var newCell = newRow.insertCell(0);
+//             //         var newText = document.createTextNode(lNameElem.value + " " + fNameElem.value);
+//             //         newCell.appendChild(newText);
+//             //         newCell = newRow.insertCell(1);
+//             //         newText = document.createTextNode(genderElem.value);
+//             //         newCell.appendChild(newText);
+//             //         newCell = newRow.insertCell(2);
+//             //         newText = document.createTextNode(ageElem.value);
+//             //         newCell.appendChild(newText);
+//             //         fNameElem.value = "";
+//             //         lNameElem.value = "";
+//             //         ageElem.value = "";
+//             //         tableElem.value = "";
+//             //     });/     console.log("firstname");
+//             //     function readFormData() {
+//             //         let formData = {};
+//             //         formData["firstname"] = document.getElementById("firstname").value;
+//             //         formData["lastname"] = document.getElementById("lastname").value;
+//             //         formData["email"] = document.getElementById("email").value;
+//             //         formData["phone"] = document.getElementById("phone").value;
+//             //         formData["date"] = document.getElementById("date").value;
+//             //         formData["age"] = document.getElementById("age").value;
+//             //         formData["subject"] = document.getElementById("subject").value;
+//             // if(!erors){
+//             //         console.log("formdata", formData["firstname"], formData)
+//             //         return formData;
+//             // }
+//             //     }
+//             //     //insert the data
+//             //     function insertNewRecord(data) {
+        
+//             //         let table = document.getElementById("table");
+//             //         let newRow = table.insertRow(table.length);
+//             //         let cell1 = newRow.insertCell(0);
+        
+//             //         cell1.innerHTML = data.firstname;
+//             //         let cell2 = newRow.insertCell(1);
+        
+//             //         cell2.innerHTML = data.lastname;
+//             //         let cell3 = newRow.insertCell(2);
+        
+//             //         cell3.innerHTML = data.email;
+//             //         let cell4 = newRow.insertCell(3);
+        
+//             //         cell4.innerHTML = data.phone;
+//             //         let cell5 = newRow.insertCell(4);
+        
+//             //         cell5.innerHTML = data.date;
+//             //         let cell6 = newRow.insertCell(5);
+        
+//             //         cell6.innerHTML = data.age;
+//             //         let cell7 = newRow.insertCell(6);
+        
+//             //         cell7.innerHTML = data.subject;
+//             //         let cell8 = newRow.insertCell(7);
+        
+//             <!-- //         cell8.innerHTML = '<button onclick="onEdit(this)">Edit</button> <button onclick="onDelete(this)">Delete</button>' -->
+//             //     }
+//             //     function resetForm() {
+//             //         document.getElementById("firstname").value = "";
+//             //         document.getElementById("lastname").value = "";
+//             //         document.getElementById("email").value = "";
+//             //         document.getElementById("phone").value = "";
+//             //         document.getElementById("date").value = "";
+//             //         document.getElementById("age").value = "";
+//             //         document.getElementById("subject").value = "";
+//             //     }
+//                 function onEdit(td) {
+// //                     selectedRow = td.parentElement.parentElement;
+//                     document.getElementById("firstname").value = selectedRow.cells[0].innerHTML;
+//                     document.getElementById("lastname").value = selectedRow.cells[1].innerHTML;
+//                     document.getElementById("email").value = selectedRow.cells[2].innerHTML;
+//                     document.getElementById("phone").value = selectedRow.cells[3].innerHTML;
+//                     document.getElementById("date").value = selectedRow.cells[4].innerHTML;
+//                     document.getElementById("age").value = selectedRow.cells[5].innerHTML;
+//                     document.getElementById("subject").value = selectedRow.cells[6].innerHTML;
+//                 }
+// //             //     function updateRecord(formData) {
+// //             //         selectedRow.cells[0].innerHTML = formData.firstname;
+//             //         selectedRow.cells[1].innerHTML = formData.lastname;
+//             //         selectedRow.cells[2].innerHTML = formData.email;
+//             //         selectedRow.cells[3].innerHTML = formData.phone;
+//             //         selectedRow.cells[4].innerHTML = formData.date;
+//             //         selectedRow.cells[5].innerHTML = formData.age;
+//             //         selectedRow.cells[5].innerHTML = formData.subject;
+//             //         selectedRow = null;
+//             //         console.log(formData);
+//             //     }
+//             //     function onDelete(td) {
+//             //         if (confirm("Are you sure to delete this record?")) {
+//             //             console.log(td.parentElement)
+//             //             let row = td.parentElement.parentElement;
+//             //             document.getElementById("employeeinfo").deleteRow(row.rowIndex);
+//             //         }
+//             //     }
+        
+        
+        
+//             //     let list1 = [];
+//             //     let list2 = [];
+//             //     let list3 = [];
+//             //     let list4 = [];
+//             //     let list5= [];
+//             //     let list6 = [];
+//             //     let list7 = [];
+//             // let n=1;
+//             // let x=0;
+        
+        
+        
+//             // function ADDRow(){
+//             //     let ADDRow=document.getElementById("table");
+//             //     let newRow=ADDRow.insertRow(n);
+//             // list1[x] =  document.getElementById("firstname").value;
+//             // list2[x] =  document.getElementById("lastname").value;
+//             // list3[x] =  document.getElementById("email").value;
+//             // list4[x] =  document.getElementById("phone").value;
+//             // list5[x] =  document.getElementById("date").value;
+//             // list6[x] =  document.getElementById("age").value;
+//             // list7[x] =  document.getElementById("subject").value;
+//             // console.log(table);
+        
+        
+        
+        
+//             // let cell1 = newRow.insertcell(0);
+//             // let cell2 = newRow.insertcell(1);
+//             // let cell3 = newRow.insertcell(2);
+//             // let cell4 = newRow.insertcell(3);
+//             // let cell5 = newRow.insertcell(4);
+//             // let cell6 = newRow.insertcell(5);
+//             // let cell7 = newRow.insertcell(6);
+        
+//             // cell1.innerHTML = list1[x];
+//             // cell2.innerHTML = list2[x];
+//             // cell3.nnerHTML = list3[x];
+//             // cell4.innerHTML = list4[x];
+//             // cell5.innerHTML = list5[x];
+//             // cell6.innerHTML = list6[x];
+//             // cell7.innerHTML = list17[x];
+        
+        
+        
+//             // n++;
+//             // x++;
+        
+//             // function ADDRow() {
+//             //     let firstname = document.getElementById("firstname").value;
+//             //     let lastname = document.getElementById("lastname").value;
+//             //     let email = document.getElementById("email").value;
+//             //     let phone = document.getElementById("phone").value;
+//             //     let date = document.getElementById("date").value;
+//             //     let age = document.getElementById("age").value;
+//             //     let subject = document.getElementById("subject").value;
+//             //     console.log("mytable");
+//             //     let table = document.getElementById("myTable")
+        
+//             //     let row = table.insertRow(n);
+        
+        
+//             //     let cell1 = row.insertCell();
+//             //     let cell2 = row.insertCell();
+//             //     let cell3 = row.insertCell();
+//             //     let cell4 = row.insertCell();
+//             //     let cell5 = row.insertCell();
+//             //     let cell6 = row.insertCell();
+//             //     let cell7 = row.insertCell();
+        
+        
+        
+//             //     cell1.innerHTML = firstname;
+//             //     cell2.innerHTML = lastname;
+        
+        
+//             //     cell1.innerHTML = email;
+//             //     cell2.innerHTML = phone;
+        
+//             //     cell1.innerHTML = date;
+//             //     cell2.innerHTML = age;
+        
+        
+//             //     cell1.innerHTML = subject;
+        
+        
+//             // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  array get method 
+         // const formDataArray = [];
+
+        // const data = [firstname, lastname, email, phone, date, age, subject];
+
+        // const formData = new FormData(form);
+
+        // for (const [name, value] of formData.entries()) {
+
+        //     formDataArray.push({ name: name, value: value });
+
+        //     console.log(`${name}: ${value}`);
+
+        //     console.log(formDataArray);
+        // }
+
+        //add events
+        // const table = document.getElementById('table');
+    
+        // const firstnameinput= document.getElementById('firstname');
+        // const lastnameInput = document.getElementById('lastname');
+        // const emailInput = document.getElementById('email');
+        // const phoneInput = document.getElementById('phone');
+        // const dateInput = document.getElementById('date');
+        // const ageInput = document.getElementById('age');
+        // const subjectInput = document.getElementById('subject');
+        
+    
+    
+    
+        // const fname = firstnameinput.value;
+        // const lname = lastnameInput.value;
+        // const emailid = firstnameinput.value;
+        // const phoneno = lastnameInput.value;
+    
+    
+        // const dateno = firstnameinput.value;
+        // const Age = lastnameInput.value;
+        // const subj = firstnameinput.value;
+      
+    
+        // const row = document.createElement('tr');
+        // const firstnameCell = document.createElement('td');
+        // const lastCell = document.createElement('td');
+        // const emailCell = document.createElement('td');
+        // const phoneCell = document.createElement('td');
+        // const dateCell = document.createElement('td');
+        // const ageCell = document.createElement('td');
+        // const subjectCell = document.createElement('td');
+        
+    
+    
+    
+    
+    
+    
+        // firstnameCell.textContent = firstname;
+        // ageCell.textContent = lastname;
+        // nameCell.textContent = email;
+        // ageCell.textContent = phoneCell;
+        // dateCell.textContent = date;
+        // ageCell.textContent = age;
+        // subjectCell.textContent = subject;
+       
+        // row.appendChild(nameCell);
+        // row.appendChild(ageCell);
+        // table.appendChild(row);
+        const sendData = (Val, sRate, count) => {
+                // if (sRate === count) 
+                // alert("Registration successfull.")
+                // swal("Welcome! " + Val, "Registration Successful", "success");
+            } // create an array of objects
+            // const data = [
+            //     formdata
+            // ];
+            // // create table element
+            // const table = document.createElement("mytable");
+            // // create table header row
+            // const headerRow = document.createElement("tr");
+            // const headers = Object.keys(data[0]);
+            // headers.forEach(headerText => {
+            //     const header = document.createElement("th");
+            //     header.appendChild(document.createTextNode(headerText));
+            //     headerRow.appendChild(header);
+            // });
+            // table.appendChild(headerRow);
+            // // create table body
+            // const tbody = document.createElement("tbody");
+            // data.forEach(rowData => {
+            //     const row = document.createElement("tr");
+            //     headers.forEach(headerText => {
+            //         const cell = document.createElement("td");
+            //         cell.appendChild(document.createTextNode(rowData[headerText]));
+            //         row.appendChild(cell);
+            //     });
+            //     tbody.appendChild(row);
+            // });
+            // table.appendChild(tbody);
+            // // add table to HTML document
+            // document.body.appendChild(table);
+        
+
+
+
+
+        //    89689658689648364836482428484834346894368374327 perfect valid =================
+
+
+        //     function addRow(formdata) {
+        //       // Get the table element in which you want to add row
+        //       let table = document.getElementById("table");
+        //       console.log(formdata.firstname, 'line129')
+        //       // Create a row using the insertRow() method and
+        //       // specify the index where you want to add the row
+        //       let row = table.insertRow(-1); // We are adding at the end
+          
+        //       // Create table cells
+        //       let c1 = row.insertCell(0);
+        //       let c2 = row.insertCell(1);
+        //       let c3 = row.insertCell(2);
+        //       let c4 = row.insertCell(3);
+        //       let c5 = row.insertCell(4);
+        //       let c6 = row.insertCell(5);
+        //       let c7 = row.insertCell(6);
+          
+        //       // Add data to c1 and c2
+        //       c1.innerText = formdata.firstname;
+        //       c2.innerText = formdata.lastname;
+        //       c3.innerText = formdata.email;
+        //       c4.innerText = formdata.age;
+        //       c5.innerText = formdata.date;
+        //       c6.innerText = formdata.phone;
+        //       c7.innerText = formdata.subject;
+        //   }
+          
+        //   let myArray = []
+        //   let erors = false
+          
+        //   const form = document.getElementById('form');
+        //   const firstname = document.getElementById('firstname');
+        //   const lastname = document.getElementById('lastname');
+        //   const email = document.getElementById('email');
+        //   const phone = document.getElementById('phone');
+        //   const date = document.getElementById('date');
+        //   const age = document.getElementById('age');
+        //   const subject = document.getElementById('subject');
+          
+          
+        //   form.addEventListener('submit', function (event) {
+        //       event.preventDefault();
+        //       // validate()
+        //       let isvalidate = validate()
+        //       console.log(isvalidate)
+          
+          
+        //       // data get in console----------------------------------------------------------------------------------------
+          
+        //       const formdata = { firstname: "", lastname: "", email: "", phone: "", date: "", age: "", subject: "" };
+        //       console.log(formdata);
+          
+          
+        //       formdata.firstname = document.getElementById("firstname").value;
+        //       console.log(formdata.firstname);
+          
+        //       formdata.lastname = document.getElementById("lastname").value;
+        //       console.log(formdata.lastname);
+          
+          
+        //       formdata.email = document.getElementById("email").value;
+        //       console.log(formdata.email);
+          
+        //       formdata.phone = document.getElementById("phone").value;
+        //       console.log(formdata.phone);
+          
+          
+        //       formdata.date = document.getElementById("date").value;
+        //       console.log(formdata.date);
+          
+        //       formdata.age = document.getElementById("age").value;
+        //       console.log(formdata.age);
+          
+          
+        //       formdata.subject = document.getElementById("subject").value;
+        //       console.log(formdata.subject);
+          
+          
+        //       const myObject = {
+        //           formdata
+        //       };
+        //       if (!erors) {
+        //           myArray.push(formdata)
+        //       }
+          
+        //       console.log(myArray);
+          
+        //       if (isvalidate == false) {
+        //           addRow(formdata)
+          
+        //       }
+          
+        //   });
+          
+        //   //Final data validate 
+        //   const successMsg = (Val) => {
+        //       let formCon = document.getElementsByClassName('form-control');
+        //       let count = formCon.length - 1;
+        //       for (let i = 0; i < formCon.length; i++) {
+        //           if (formCon[i].className === "form-control success") {
+        //               let sRate = 0 + i;
+          
+        //           } else {
+        //               return false;
+        //           }
+        //       }
+        //   }
+        //   //More email validate
+        //   const isEmail = (emailVal) => {
+        //       let atSymbol = emailVal.indexOf("@");
+        //       if (atSymbol < 1) return false;
+        //       let dot = emailVal.lastIndexOf('.');
+        //       if (dot <= atSymbol + 3) return false;
+        //       if (dot === emailVal.length - 1) return false;
+        //       return true;
+        //   }
+        //   //define validate function
+          
+        //   const validate = () => {
+        //       const firstenameVal = firstname.value.trim();
+        //       console.log(firstenameVal)
+        //       console.log("firstname")
+        //       const lastenameVal = lastname.value.trim();
+        //       console.log(lastenameVal)
+        //       console.log("lastname")
+        //       const emailVal = email.value.trim();
+        //       console.log(emailVal)
+        //       console.log("email")
+        //       const phoneVal = phone.value.trim();
+        //       console.log(phoneVal)
+        //       console.log("phone")
+        //       const dateval = date.value.trim();
+        //       console.log(dateval)
+        //       console.log("date")
+        //       const ageval = age.value.trim();
+        //       console.log(ageval)
+        //       console.log("age")
+        //       const subjectval = subject.value.trim();
+        //       console.log(subjectval)
+        //       console.log("subject")
+          
+          
+        //       //validate first name 
+        //       if (firstenameVal === "") {
+        //           setErrorMsg(firstname, 'firstname can not be blank.');
+        //           erors = true
+        //       } else if (firstenameVal.length <= 2) {
+        //           setErrorMsg(firstname, 'firstname min 3 characters.');
+        //           erors = true
+        //       } else {
+        //           setSuccessMsg(firstname);
+        //           erors = false
+        //       }
+        //       //validate last name 
+        //       if (lastenameVal === "") {
+        //           setErrorMsg(lastname, 'lastname can not be blank.');
+        //           erors = true
+        //       } else if (lastenameVal.length <= 2) {
+        //           setErrorMsg(lastname, 'lastname min 3 characters.');
+        //           erors = true
+        //       } else {
+        //           setSuccessMsg(lastname);
+        //           erors = false
+        //       }
+          
+          
+        //       //validate email address
+        //       if (emailVal === "") {
+        //           setErrorMsg(email, 'email can not be blank.');
+        //           erors = true
+        //       } else if (!isEmail(emailVal)) {
+        //           setErrorMsg(email, 'Not a valid Email.');
+        //           erors = true
+        //       } else {
+        //           setSuccessMsg(email);
+        //           erors = false
+        //       }
+          
+        //       //validate phone
+        //       if (phoneVal === "") {
+        //           setErrorMsg(phone, 'phone can not be blank.');
+        //           erors = true
+        //       } else if (phoneVal.length != 10) {
+        //           setErrorMsg(phone, 'Not a valid phone number.');
+        //           erors = true
+        //       } else {
+        //           setSuccessMsg(phone);
+        //           erors = false
+        //       }
+          
+        //       //validate dateval
+        //       if (dateval === "") {
+        //           setErrorMsg(date, 'birthdate write here.');
+        //           erors = true
+        //       }
+        //       else {
+        //           setSuccessMsg(date);
+        //           erors = false
+        //       }
+          
+        //       //validate ageval 
+        //       if (ageval === "") {
+        //           setErrorMsg(age, 'age must to write here.');
+        //           erors = true
+        //       }
+        //       // else if (ageval.length !=-0) {
+        //       //     setErrorMsg(phone, 'Not a valid age  number.');
+        //       //     erors = true
+        //       // }
+          
+        //       else {
+        //           setSuccessMsg(age);
+        //           erors = false
+        //       }
+        //       //validate subject 
+        //       if (subjectval === "") {
+        //           setErrorMsg(subject, 'chose your subject.');
+        //           erors = true
+        //       }
+        //       // else if (subjectval.length) {
+        //       //     setErrorMsg(subject, 'chose your subject.');
+        //       // } 
+        //       else {
+        //           setSuccessMsg(subject);
+        //           erors = false
+        //       }
+          
+          
+        //       successMsg(validate);
+          
+        //       return erors
+          
+        //   }
+          
+        //   function setErrorMsg(input, errormsgs) {
+        //       const formControl = input.parentElement;
+        //       const small = formControl.querySelector('small');
+        //       formControl.className = "form-control error";
+        //       small.innerText = errormsgs;
+        //   }
+          
+        //   function setSuccessMsg(input) {
+        //       const formControl = input.parentElement;
+        //       formControl.className = "form-control success";
+        //   }
+          
+          

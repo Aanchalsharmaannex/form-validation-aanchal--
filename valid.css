@@ -1,0 +1,62 @@
+.main div.div {
+  display: flex;
+}
+
+form {
+  background-color: #e2edf1;
+  font-size: 20px;
+  border: 7px solid black;
+  border-radius: 10px;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 3px solid rgb(27, 82, 118);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+}
+
+.form input {
+  padding: 50px;
+}
+
+form span {
+  padding: 0.6em 1em;
+}
+
+form button {
+  border-radius: 7px;
+  border: 3px solid black;
+  padding: 8px;
+  margin: 3em;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  background-color: rgb(120, 126, 125);
+  font-weight: bold;
+}
+
+center {
+  color: hsl(267, 88%, 13%);
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px 5px;
+  max-width: 100%;
+  margin: 5px 5px;
+  background-color: gray;
+}
+
+table {
+
+
+  border: 3px solid rgb(50, 51, 51);
+  border-radius: 10px;
+
+}

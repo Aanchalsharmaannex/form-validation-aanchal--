@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudenSignupForm</title>
+  <link rel="stylesheet" href="valid.css">
+
+
+</head>
+
+<body>
+  <div class="container"><br>
+
+    <center>
+      <font size=5><b>Student Signup Form</b></font>
+    </center>
+
+
+    <form id="myForm">
+      <div cellpadding="18" width="30%" bgcolor="#F5CBA7" align="center" cellspacing="18">
+        <div class="firstdiv">
+        
+          <span id="error" class="error-one" class="text-danger"></span>
+      <input  type="text" id="firstName" name="name" placeholder=" enter your first name"oninput=validateForm()>
+
+        </div>
+        <div>
+          <span>Last Name</span></br>
+          <input type="text  " placeholder="enter your Last Name" id="lastName" size="30" ></br>
+        </div>
+        <div>
+          <span> Age</span></br>
+          <input type="number" placeholder="enter your Age" id="number" size="30" ></br>
+        </div>
+        <div>
+          <span>Birthday </span></br>
+          <input type="date" placeholder="enter your Birthday" id="date" size="30" ></br>
+        </div>
+        <div>
+
+          <span>Email id</span></br>
+          <input type="Email id " placeholder="enter your Email id" id="emailid " size="30" ></br>
+        </div>
+        <div>
+          <span>phone number </span></br>
+          <input type="number" placeholder="enter your phone number" id="phonenumber" size="30" ></br>
+        </div>
+
+        <span>subject</span></br>
+        <input list="subject" name="myBrowser" placeholder="select your subject"  /></label>
+        <datalist id="subject">
+          <option value="Operating Systems.">
+          <option value="Artificial Intelligence.">
+          <option value="Computer Architecture.">
+          <option value="Machine Learning.">
+          <option value="Computer Forensics">
+          <option value="Microsoft">
+        </datalist></br>
+
+        <button type="submit" onclick=validateForm(event)>Submit</button></br>
+
+    </form>
+
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+
+        <th>Lastname</th>
+        <th>Birthday</th>
+        <th>Gender</th>
+        <th>Email id</th>
+        <th>phone number</th>
+        <th>subject</th>
+      </tr>
+      <tr>
+        <thead>
+        <tbody>
+        <tbody>
+          </thead>
+      </tr>
+
+    </table>
+</body>
+
+
+
+<script>
+  function validateForm(e) {
+    let firstName = document.getElementById("firstName").value;
+let Name = document.getElementById("error")
+
+if (firstName.length == 0){
+ console.log("firstName if");
+ Name.innerHTML = "*you  must write";
+ document.getElementById("firstName").innerHTML = "";
+
+}
+else if (firstName.length >=5){
+ Name.innerHTML.alert = "*grater then three words";
+  }
+else {
+ Name.innerHTML = "";
+ document.getElementById("firstName").innerHTML = "";
+
+
+}
+
+e.preventDefault()
+}
+  
+ 
+</script>
+
+<!-- //   let LastName = document.getElementById('LastName').value;
+//   let number = document.getElementById('number').value;
+//   let date = document.getElementById('date').value;
+//   let email = document.getElementById('emailid').value;
+//   let phonenumber = document.getElementById('phonenumber').value;
+//   let subject = document.getElementById('subject').value;
+//   let span= document.getElementById("firstSpan")
+
+//   if (FirstName == "") {
+//     document.getElementById('firstspan').innerHTML = " ** Please fill the UserName field";
+//   }
+
+//   if ((FirstName.length <= 2) || (FirstName.length >= 20)) {
+//     document.getElementById('firstspan').innerHTML = " ** user name should be between 2 to 20 characters "
+//   } else if (!isNaN(FirstName)) {
+//     document.getElementById('FirstName').innerHTML = " ** Only Characters are allowed"
+//   }
+
+
+
+
+//   if (user == "") {
+//     document.getElementById('LastName').innerHTML = " ** Please fill the UserName field";
+//     return false;
+//   }
+
+//   if ((user.length <= 2) || (user.length >= 20)) {
+//     document.getElementById('LastName').innerHTML = " ** user name should be between 2 to 20 characters "
+//   } else if (!isNaN(user)) {
+//     document.getElementById('LastName').innerHTML = " ** Only Characters are allowed"
+//   }
+
+
+
+//   if (phonenumber == "") {
+//     document.getElementById("phonenumber").innerHTML = " ** Enter Mobile Number";
+//     return false;
+//   } else if (phonenumber.length != 10) {
+//     document.getElementById("phonenumber").innerHTML = " ** Mobile Number Should be 10 digit "
+//     return false;
+//   } else if (isNaN(phonenumber)) {
+//     document.getElementById('phonenumber').innerHTML = " ** Only digit are Accepted"
+//     return false;
+//   }
+
+
+
+
+//   if (emailid == "") {
+//     document.getElementById('emailid').innerHTML = " ** Enter Email ID"
+//     return false;
+//   } else if (emailid.indexOf('@') <= 0) {
+//     document.getElementById('emailid').innerHTML = " **  @ Invalid Position"
+//     return false;
+//   } else if ((emailid.charAt(emailid.length - 4) != '.') && (emailid.charAt(emailid.length - 3) != '.')) {
+//     document.getElementById('emailid').innerHTML = " **  . Invalid Position"
+//     return false;
+//   }
+//  -->
+</html>
